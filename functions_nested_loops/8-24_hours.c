@@ -19,7 +19,7 @@ void jack_bauer(void)
 
 		while (hour_ones <= 9)
 		{
-			mins_tens = 0;
+			min_tens = 0;
 
 			while (min_tens <= 5)
 			{
@@ -43,6 +43,6 @@ void jack_bauer(void)
 			hour_ones++;
 		}
 
-		hour_tens++
+		hour_tens++;
 	}
 }
