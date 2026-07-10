@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isupper - checks for numbers between 0-9
+ * _isdigit - checks for numbers between 0-9
  * @c: character check
  *
  * Return: 1 if upper case, otherwise 0
