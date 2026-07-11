@@ -4,7 +4,7 @@
  * @n: amount of times we want _ printed
  *
  * Return: Nothing
- */i
+ */
 void print_line(int n)
 {
 	while (n > 0)
