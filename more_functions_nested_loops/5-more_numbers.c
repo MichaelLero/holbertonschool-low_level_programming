@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * more_numbers - 
+ * more_numbers - prints 10 times the numbers 1 to 14, followed by a new line
  *
  * Return: Nothing
- */void more_numbers(void)
+ */
+void more_numbers(void)
 {
 	int count;
 	int n;
