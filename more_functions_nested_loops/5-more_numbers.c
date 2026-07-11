@@ -8,12 +8,12 @@ void more_numbers(void)
 {
 	int count;
 	int n;
-	
+
 	count = 0;
 	while (count < 10)
 	{
 		n = 0;
-		while (n <=14)
+		while (n <= 14)
 		{
 			if (n > 9)
 			{
@@ -22,8 +22,7 @@ void more_numbers(void)
 			_putchar((n % 10) + '0');
 			n++;
 		}
-	
-	_putchar('\n');
-	count++;
+		_putchar('\n');
+		count++;
 	}
 }
