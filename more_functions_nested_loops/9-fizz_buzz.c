@@ -12,7 +12,7 @@ int main(void)
 
 	while (counter <= 100)
 	{
-		if (couner > 1)
+		if (counter > 1)
 		{
 			printf(" ");
 		}
