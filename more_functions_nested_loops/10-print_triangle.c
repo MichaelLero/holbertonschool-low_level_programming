@@ -21,21 +21,20 @@ void print_triangle(int size)
 	while (row <= size)
 	{
 		(spaces = size - row);
-	}
 
-	while (spaces > 0)
-	{
-		_putchar(' ');
-		spaces--;
-	}
+		while (spaces > 0)
+		{
+			_putchar(' ');
+			spaces--;
+		}
 
-	hashes = 0;
+		hashes = 0;
 
-	while (hashes < row)
-	{
-		_putchar('#');
-		hashes++;
-	}
+		while (hashes < row)
+		{
+			_putchar('#');
+			hashes++;
+		}
 
 		_putchar('\n');
 		row++;
