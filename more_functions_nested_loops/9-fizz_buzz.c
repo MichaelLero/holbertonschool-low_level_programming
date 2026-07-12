@@ -15,6 +15,7 @@ int main(void)
 		if (couner > 1)
 		{
 			printf(" ");
+		}
 
 		if (counter % 3 == 0 && counter % 5 == 0)
 		{
