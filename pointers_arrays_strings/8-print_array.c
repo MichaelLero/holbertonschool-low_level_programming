@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - Prints array of numbers by n amount of times.
  * @a: Array of numbers
@@ -18,10 +19,10 @@ void print_array(int *a, int n)
 
 		if (counter < n - 1)
 		{
-			prinf(", ");
+			printf(", ");
 		}
 
 		counter++;
 	}
-	printf("\n")
+	printf("\n");
 }
