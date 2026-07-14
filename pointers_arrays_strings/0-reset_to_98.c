@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * reset_to_98 - updates given integer to 98
  *@n: integer to be updated to 98
