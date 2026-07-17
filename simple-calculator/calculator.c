@@ -2,13 +2,26 @@
 
 int Addi(int a, int b)
 {
-        int Aanswer;
+        int Answer;
 
-        Aanswer = a + b;
+        Answer = a + b;
 
-        return (Aanswer);
+        return (Answer);
 }
 
+
+
+
+#include <stdio.h>
+
+int Sub(int a, int b)
+{
+	int Answer;
+	
+	Answer = a - b;
+	
+	return (Answer);
+}
 
 
 
@@ -56,6 +69,17 @@ int main(void)
 	else if (choice == 2)
 	{
 		printf("you have chosen Subtract\n");
+
+		printf("A: ");
+                scanf("%d", &a);
+
+                printf("B: ");
+                scanf("%d", &b);
+
+                result = Sub(a, b);
+
+                printf("Results: %d\n", result);
+
 	}
 
 	else if (choice == 3)
