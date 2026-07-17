@@ -25,6 +25,18 @@ int Sub(int a, int b)
 
 
 
+#include <stdio.h>
+
+int Multi(int a, int b)
+{
+        int Answer;
+
+        Answer = a * b;
+
+        return (Answer);
+}
+
+
 
 #include <stdio.h>
 
@@ -79,12 +91,21 @@ int main(void)
                 result = Sub(a, b);
 
                 printf("Results: %d\n", result);
-
 	}
 
 	else if (choice == 3)
 	{
 		printf("You have chosen Multiply\n");
+
+                printf("A: ");
+                scanf("%d", &a);
+
+                printf("B: ");
+                scanf("%d", &b);
+		
+		result = Multi(a, b);
+
+                printf("Results: %d\n", result);
 	}
 
 	else if (choice == 4)
