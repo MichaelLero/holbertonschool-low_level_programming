@@ -1,8 +1,26 @@
 #include <stdio.h>
 
+int Addi(int a, int b)
+{
+        int Aanswer;
+
+        Aanswer = a + b;
+
+        return (Aanswer);
+}
+
+
+
+
+
+#include <stdio.h>
+
 int main(void)
 {
 	int choice;
+	int a;
+	int b;
+	int result;
 
 	printf("This is a simple calculator\n");
 	printf("1) Add\n");
@@ -23,6 +41,16 @@ int main(void)
 	if (choice == 1)
 	{
 		printf("You have chosen Add\n");
+		
+		printf("A: ");
+		scanf("%d", &a);
+
+		printf("B: ");
+		scanf("%d", &b);
+
+		result = Addi(a, b);
+
+		printf("Results: %d\n", result);
 	}
 
 	else if (choice == 2)
