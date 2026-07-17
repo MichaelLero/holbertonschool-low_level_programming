@@ -14,6 +14,12 @@ int main(void)
 
 	scanf("%d", &choice);
 
+	while (choice < 0 || choice >= 5)
+	{
+		printf("invalid choice\n");
+		scanf("%d", &choice);
+	}
+
 	if (choice == 1)
 	{
 		printf("You have chosen Add\n");
