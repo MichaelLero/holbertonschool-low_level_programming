@@ -11,7 +11,6 @@ int Addi(int a, int b)
 
 
 
-
 #include <stdio.h>
 
 int Sub(int a, int b)
@@ -25,6 +24,7 @@ int Sub(int a, int b)
 
 
 
+
 #include <stdio.h>
 
 int Multi(int a, int b)
@@ -32,6 +32,19 @@ int Multi(int a, int b)
         int Answer;
 
         Answer = a * b;
+
+        return (Answer);
+}
+
+
+
+#include <stdio.h>
+
+int Div(int a, int b)
+{
+        int Answer;
+
+        Answer = a / b;
 
         return (Answer);
 }
@@ -111,6 +124,16 @@ int main(void)
 	else if (choice == 4)
 	{
 		printf("You have chosen Divide\n");
+
+		printf("A: ");
+                scanf("%d", &a);
+
+                printf("B: ");
+                scanf("%d", &b);
+
+                result = Div(a, b);
+
+                printf("Results: %d\n", result);
 	}
 
 	else
