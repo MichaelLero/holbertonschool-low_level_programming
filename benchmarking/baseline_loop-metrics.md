@@ -1,21 +1,14 @@
-Step limit reached
-Stopped after running 190 steps since trace is growing too long.
-Please shorten your code or make your data smaller,
-since Python Tutor is not designed to handle long-running code.
+TEST 1:
 
-main
-result	
-unsigned long long
-93
-start	
-clock_t
-849530
-end	
-clock_t
-?
-elapsed	
-double
-?
-i	
-unsigned long
-93
+Iterations: 100000000
+Execution time: 0.069506 seconds
+
+TEST 2:
+
+Iterations: 100000000
+Execution time: 0.070180 seconds
+
+TEST 3:
+
+Iterations: 100000000
+Execution time: 0.073885 seconds
