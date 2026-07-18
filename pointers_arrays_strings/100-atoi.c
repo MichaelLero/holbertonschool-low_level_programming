@@ -30,7 +30,7 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (minus_coun % 2 != 0)
+	if (minus_count % 2 != 0)
 		sign = -1;
 
 	while (s[i] >= '0' && s[i] <= '9')
