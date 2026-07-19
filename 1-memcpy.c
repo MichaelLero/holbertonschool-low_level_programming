@@ -3,7 +3,7 @@
  * _memcpy - Copies memory area
  * @dest: where data is copies to
  * @src: where data will be copies from
- * @n: number of bytes copied to string
+ * @n: number of bytes copied
  *
  * Return: Copied characters to existing string
  */
