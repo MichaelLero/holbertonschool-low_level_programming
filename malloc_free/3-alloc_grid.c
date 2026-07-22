@@ -14,7 +14,6 @@ int **alloc_grid(int width, int height)
 	int **grid;
 	int i;
 	int o;
-	int j;
 
 	i = 0;
 	o = 0;
