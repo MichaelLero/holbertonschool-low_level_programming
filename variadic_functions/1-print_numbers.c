@@ -51,7 +51,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int i;
 
 	counter = 0;
-	numbers = 0;
+	number = 0;
 
 	if (n == 0)
 	{
