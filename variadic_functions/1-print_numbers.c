@@ -46,7 +46,7 @@ void print_number(int number)
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int counter;
-	int numbers;
+	int number;
 	va_list args;
 	int i;
 
@@ -73,7 +73,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 		}
 
-		numbers = va_arg(args, int);
+		number = va_arg(args, int);
 
 		print_number(number);
 
