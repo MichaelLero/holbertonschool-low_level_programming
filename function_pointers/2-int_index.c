@@ -2,15 +2,15 @@
 #include <stddef.h>
 
 /**
- * int_index - function searches for an integer
+ * int_index - searches for an integer in an array
  * @array: array of integers
- * @size: number of elements in an array
- * @cmp: pointer to function that compares values
+ * @size: number of elements in the array
+ * @cmp: pointer to the comparison function
  *
- * return: index of the first element for which cmp
- * function does not return 0, if no element matchs return -1
- * or if size <= 0 return -1.
+ * Return: index of the first element where cmp does not return 0,
+ * or -1 if no match is found.
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int counter;
@@ -34,7 +34,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	while (counter < size)
 	{
-		if (cmp(array[counter]) != 0 )
+		if (cmp(array[counter]) != 0)
 		{
 			return (counter);
 		}
