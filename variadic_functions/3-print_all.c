@@ -22,30 +22,26 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (*p != '\0')
+	while (p != NULL && *p != '\0')
 	{
 		switch (*p)
 		{
 			case 'c':
-				printf("%s", separator);
-				_putchar(va_arg(args, int));
+				printf("%s%c", separator, va_arg(args, int));
 				separator = ", ";
 				break;
-			
+
 			case 'i':
-				printf("%s", separator);
-				printf("%d", va_arg(args, int));
+				printf("%s%d", separator, va_arg(args, int));
 				separator = ", ";
 				break;
-			
+
 			case 'f':
-				printf("%s", separator);
-				printf("%f", va_arg(args, double));
+				printf("%s%f", separator, va_arg(args, double));
 				separator = ", ";
 				break;
-			
+
 			case 's':
-				printf("%s", separator);
 				s = va_arg(args, char *);
 
 				if (s == NULL)
@@ -53,7 +49,7 @@ void print_all(const char * const format, ...)
 					s = "(nil)";
 				}
 
-				printf("%s", s);
+				printf("%s%s", separator, s);
 				separator = ", ";
 				break;
 
