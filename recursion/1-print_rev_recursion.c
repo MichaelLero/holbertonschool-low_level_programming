@@ -1,5 +1,6 @@
+#include "main.h"
 /**
- * _puts_recursion - Prints a string, followed by new line
+ * _print_rev_recursion - Prints a string in reverse, followed by new line
  * @s: the string
  *
  * Return: Nothing
@@ -14,4 +15,4 @@ void _print_rev_recursion(char *s)
 	_print_rev_recursion(s + 1);
 	_putchar(*s);
 }
-	
+
