@@ -12,6 +12,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	ssize_t bytes_read;
 	ssize_t bytes_written;
+	size_t total = 0;
+	size_t to_read;
 	char buffer[1024];
 
 	if (filename == NULL)
@@ -25,20 +27,38 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	bytes_read = read(fd, buffer, letters);
-	if (bytes_read == -1)
+	while (total < letters)
 	{
-		close(fd);
-		return (0);
+		to_read = letters - total;
+
+		if (to_read > 1024)
+		{
+			to_read = 1024;
+		}
+
+		bytes_read = read(fd, buffer, to_read);
+		if (bytes_read == -1)
+		{
+			close(fd);
+			return (0);
+		}
+
+		if (bytes_read == 0)
+		{
+			break;
+		}
+
+		bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+		if (bytes_written != bytes_read)
+		{
+			close(fd);
+			return (0);
+		}
+
+		total += bytes_read;
 	}
 
-	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 	close(fd);
 
-	if (bytes_written != bytes_read)
-	{
-		return (0);
-	}
-
-	return (bytes_written);
+	return (total);
 }
